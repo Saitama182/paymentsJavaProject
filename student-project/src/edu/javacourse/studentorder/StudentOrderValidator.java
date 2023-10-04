@@ -1,3 +1,11 @@
+package edu.javacourse.studentorder;
+
+import edu.javacourse.studentorder.domain.*;
+import edu.javacourse.studentorder.mail.MailSender;
+import edu.javacourse.studentorder.validator.ChildrenValidator;
+import edu.javacourse.studentorder.validator.CityRegisterValidator;
+import edu.javacourse.studentorder.validator.StudentValidator;
+import edu.javacourse.studentorder.validator.WeddingValidator;
 import org.w3c.dom.ls.LSOutput;
 
 public class StudentOrderValidator {
@@ -40,27 +48,28 @@ public class StudentOrderValidator {
     static AnswerCityRegister checkCityRegister(StudentOrder so) {
         CityRegisterValidator crv1 = new CityRegisterValidator();
         crv1.hostName = "Host1";
-        crv1.login = "Login1";
-        crv1.password = "Password1";
+
         AnswerCityRegister ans1 = crv1.checkCityRegister(so);
         return ans1;
 
     }
 
     static AnswerWedding checkWedding(StudentOrder so) {
-        return WeddingValidator.checkWedding(so);
+        WeddingValidator wd = new WeddingValidator();
+        return wd.checkWedding(so);
     }
 
     static AnswerChildren checkChildren(StudentOrder so) {
-        return ChildrenValidator.checkChildren(so);
+        ChildrenValidator cv = new ChildrenValidator();
+        return cv.checkChildren(so);
     }
 
     static AnswerStudent checkStudent(StudentOrder so) {
-        return StudentValidator.checkStudent(so);
+        return new StudentValidator().checkStudent(so);
     }
 
     static void sendMail(StudentOrder so) {
-        System.out.println("Почта отправлена");
+        new MailSender().sendMail(so);
     }
 
 }

@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeb22e9e-c400-4a2e-a080-db8f7ae6442a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/StudentOrderValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentOrderValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/ChildrenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/StudentValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/WeddingValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerChildren.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/AnswerChildren.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerCityRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/AnswerCityRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/AnswerStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnswerWedding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/AnswerWedding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChildrenValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CityRegisterValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/CityRegisterValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SaveStudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentOrderValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/StudentOrderValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WeddingValidator.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,24 +45,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;A:/paymentsJavaProject/student-project&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "A:/paymentsJavaProject/student-project"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.StudentOrderValidator">
     <configuration name="SaveStudentOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SaveStudentOrder" />
+      <option name="MAIN_CLASS_NAME" value="edu.javacourse.studentorder.SaveStudentOrder" />
       <module name="student-project" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="StudentOrderValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudentOrderValidator" />
+      <option name="MAIN_CLASS_NAME" value="edu.javacourse.studentorder.StudentOrderValidator" />
       <module name="student-project" />
       <method v="2">
         <option name="Make" enabled="true" />
