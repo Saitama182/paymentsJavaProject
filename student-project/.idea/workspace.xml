@@ -7,6 +7,8 @@
     <list default="true" id="eeb22e9e-c400-4a2e-a080-db8f7ae6442a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/other/Adult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +43,7 @@
     &quot;last_opened_file_path&quot;: &quot;A:/paymentsJavaProject/student-project&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.StudentOrderValidator">
+  <component name="RunManager" selected="Application.SaveStudentOrder">
     <configuration name="SaveStudentOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.javacourse.studentorder.SaveStudentOrder" />
       <module name="student-project" />
@@ -58,8 +60,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentOrderValidator" />
         <item itemvalue="Application.SaveStudentOrder" />
+        <item itemvalue="Application.StudentOrderValidator" />
       </list>
     </recent_temporary>
   </component>

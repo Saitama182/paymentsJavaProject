@@ -1,4 +1,6 @@
-package edu.javacourse.studentorder.domain;
+package edu.javacourse.studentorder.domain.other;
+
+import edu.javacourse.studentorder.domain.Person;
 
 import java.time.LocalDate;
 
@@ -11,6 +13,10 @@ public class Adult extends Person {
 
     private String university;
     private String studentID;
+
+    public String getPersonString(){
+        return  surName + " " + giveName + " " + passportSeria;
+    }
 
     public String getUniversity() {
         return university;
