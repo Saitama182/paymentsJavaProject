@@ -9,6 +9,8 @@ public class Person {
     private LocalDate dateOfBirth;
     private Adress address;
 
+
+
     public String getSurName() {
         return surName;
     }
