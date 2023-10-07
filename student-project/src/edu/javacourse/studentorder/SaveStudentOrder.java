@@ -21,7 +21,7 @@ public class SaveStudentOrder {
         return answer;
     }
 
-    static StudentOrder buildStudentOrder() {
+    public static StudentOrder buildStudentOrder() {
         StudentOrder so = new StudentOrder();
         Adult husband = new Adult();
         husband.setGiveName("Jonny");
