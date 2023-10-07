@@ -14,6 +14,10 @@ public class Adult extends Person {
     private String university;
     private String studentID;
 
+    public Adult() {
+        System.out.println("Adult is created");
+    }
+
     public String getPersonString(){
         return  surName + " " + giveName + " " + passportSeria;
     }

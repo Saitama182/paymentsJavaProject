@@ -12,19 +12,20 @@ public class StudentOrderValidator {
 
     private CityRegisterValidator cityRegisterVal;
     private WeddingValidator weddingVal;
-    private AnswerChildren childrenVal;
+    private ChildrenValidator childrenVal;
     private StudentValidator studentVal;
     private  MailSender mailSender;
 
     public StudentOrderValidator() {
         cityRegisterVal = new CityRegisterValidator();
         weddingVal = new WeddingValidator();
-        childrenVal = new AnswerChildren();
+        childrenVal = new ChildrenValidator();
         studentVal = new StudentValidator();
         mailSender = new MailSender();
     }
     public static void main(String[] args) {
-
+        StudentOrderValidator sov = new StudentOrderValidator();
+        sov.checkAll();
     }
 
     public void checkAll() {
@@ -69,7 +70,7 @@ public class StudentOrderValidator {
     }
 
     public AnswerChildren checkChildren(StudentOrder so) {
-        return childrenVal.checkChildren();
+        return childrenVal.checkChildren(so);
     }
 
     public AnswerStudent checkStudent(StudentOrder so) {
