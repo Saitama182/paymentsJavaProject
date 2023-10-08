@@ -6,7 +6,6 @@ import edu.javacourse.studentorder.validator.ChildrenValidator;
 import edu.javacourse.studentorder.validator.CityRegisterValidator;
 import edu.javacourse.studentorder.validator.StudentValidator;
 import edu.javacourse.studentorder.validator.WeddingValidator;
-import org.w3c.dom.ls.LSOutput;
 
 public class StudentOrderValidator {
 
@@ -14,7 +13,7 @@ public class StudentOrderValidator {
     private WeddingValidator weddingVal;
     private ChildrenValidator childrenVal;
     private StudentValidator studentVal;
-    private  MailSender mailSender;
+    private MailSender mailSender;
 
     public StudentOrderValidator() {
         cityRegisterVal = new CityRegisterValidator();
@@ -23,6 +22,7 @@ public class StudentOrderValidator {
         studentVal = new StudentValidator();
         mailSender = new MailSender();
     }
+
     public static void main(String[] args) {
         StudentOrderValidator sov = new StudentOrderValidator();
         sov.checkAll();
@@ -32,7 +32,7 @@ public class StudentOrderValidator {
 
 
         while (true) {
-            StudentOrder so = readStudentOrder();
+            StudentOrder so = readStudentOrders();
             if (so == null) {
                 break;
             }
@@ -55,10 +55,16 @@ public class StudentOrderValidator {
     }
 
 
-    public StudentOrder readStudentOrder() {
-        SaveStudentOrder.buildStudentOrder();
-        StudentOrder so = new StudentOrder();
-        return so;
+    public StudentOrder[] readStudentOrders() {
+        StudentOrder[] soArray = new StudentOrder[3];
+
+        for(int c = 0; c < soArray.length;c++){
+            SaveStudentOrder.buildStudentOrder();
+        }
+
+
+
+        return soArray;
     }
 
     public AnswerCityRegister checkCityRegister(StudentOrder so) {
