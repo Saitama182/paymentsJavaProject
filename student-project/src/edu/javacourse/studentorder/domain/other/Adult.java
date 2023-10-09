@@ -14,13 +14,12 @@ public class Adult extends Person {
     private String university;
     private String studentID;
 
-    public Adult() {
-        System.out.println("Adult is created");
+    public Adult(String surName, String giveName, String patronymic, LocalDate dateOfBirth) {
+        super(surName, giveName, patronymic, dateOfBirth);
     }
 
-    public String getPersonString(){
-        return  surName + " " + giveName + " " + passportSeria;
-    }
+  
+
 
     public String getUniversity() {
         return university;
