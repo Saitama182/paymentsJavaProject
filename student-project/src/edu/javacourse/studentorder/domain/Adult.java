@@ -1,4 +1,4 @@
-package edu.javacourse.studentorder.domain.other;
+package edu.javacourse.studentorder.domain;
 
 import edu.javacourse.studentorder.domain.Person;
 
@@ -8,33 +8,15 @@ public class Adult extends Person {
     private String passportSeria;
     private String passportNumber;
     private LocalDate issueDate;
-
     private String issueDepartment;
+    private String univesity;
+    private String studentId;
 
-    private String university;
-    private String studentID;
-
-    public Adult(String surName, String giveName, String patronymic, LocalDate dateOfBirth) {
-        super(surName, giveName, patronymic, dateOfBirth);
+    public Adult() {
     }
 
-  
-
-
-    public String getUniversity() {
-        return university;
-    }
-
-    public void setUniversity(String university) {
-        this.university = university;
-    }
-
-    public String getStudentID() {
-        return studentID;
-    }
-
-    public void setStudentID(String studentID) {
-        this.studentID = studentID;
+    public Adult(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {
+        super(surName, givenName, patronymic, dateOfBirth);
     }
 
     public String getPassportSeria() {
@@ -67,5 +49,21 @@ public class Adult extends Person {
 
     public void setIssueDepartment(String issueDepartment) {
         this.issueDepartment = issueDepartment;
+    }
+
+    public String getUnivesity() {
+        return univesity;
+    }
+
+    public void setUnivesity(String univesity) {
+        this.univesity = univesity;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 }

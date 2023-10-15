@@ -17,7 +17,7 @@ public class CityRegisterValidator {
     private CityRegisterChecker personChecker;
 
     public CityRegisterValidator() {
-        personChecker = new RealCityRegisterChecker();
+        personChecker = new FakeCityRegisterChecker();
     }
 
     public AnswerCityRegister checkCityRegister(StudentOrder so) {
@@ -26,7 +26,7 @@ public class CityRegisterValidator {
             CityRegisterCheckerResponse wans = personChecker.checkPerson(so.getWife());
             CityRegisterCheckerResponse cans = personChecker.checkPerson(so.getChild());
         } catch (CityRegisterException ex) {
-            ex.printStackTrace();
+            ex.printStackTrace(System.out);
         }
 
 

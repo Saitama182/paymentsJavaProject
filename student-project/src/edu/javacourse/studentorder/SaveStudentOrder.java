@@ -1,29 +1,38 @@
 package edu.javacourse.studentorder;
 
-import edu.javacourse.studentorder.domain.other.Adult;
+import edu.javacourse.studentorder.domain.Address;
+import edu.javacourse.studentorder.domain.Adult;
+import edu.javacourse.studentorder.domain.Child;
+import edu.javacourse.studentorder.domain.Person;
 import edu.javacourse.studentorder.domain.StudentOrder;
 
 import java.time.LocalDate;
 
-public class SaveStudentOrder {
+public class SaveStudentOrder
+{
     public static void main(String[] args) {
-        buildStudentOrder(10);
-
-        StudentOrder so = new StudentOrder();
-        long ans = saveStudentOrder(so);
-        System.out.println(ans);
-
+        StudentOrder s = buildStudentOrder(10);
+//        StudentOrder so = new StudentOrder();
+//        long ans = saveStudentOrder(so);
+//        System.out.println(ans);
     }
 
     static long saveStudentOrder(StudentOrder studentOrder) {
         long answer = 199;
-        ;
+        System.out.println("saveStudentOrder");
 
-        System.out.println("saveStudentOrder:");
         return answer;
     }
 
     public static StudentOrder buildStudentOrder(long id) {
+        StudentOrder so = new StudentOrder();
+        so.setStudentOrderId(id);
+        so.setMarriageCertificateId("" + (123456000 + id));
+        so.setMarriageDate(LocalDate.of(2016, 7, 4));
+        so.setMarriageOffice("Отдел ЗАГС");
+
+        Address address = new Address("195000", "Заневский пр.", "12", "", "142");
+
         // Муж
         Adult husband = new Adult("Петров", "Виктор", "Сергеевич", LocalDate.of(1997, 8, 24));
         husband.setPassportSeria("" + (1000 + id));
@@ -52,9 +61,5 @@ public class SaveStudentOrder {
         so.setChild(child);
 
         return so;
-    }
-
-    static void printStudentOrder(StudentOrder stOr) {
-        System.out.println(stOr.getStudentOrderId());
     }
 }
