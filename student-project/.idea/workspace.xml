@@ -7,11 +7,7 @@
     <list default="true" id="eeb22e9e-c400-4a2e-a080-db8f7ae6442a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Adress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/CityRegisterCheckerResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/CityRegisterCheckerResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/other/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Adult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/CityRegisterValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/CityRegisterValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/FakeCityRegisterChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/FakeCityRegisterChecker.java" afterDir="false" />
     </list>

@@ -34,7 +34,7 @@ public class FakeCityRegisterChecker implements CityRegisterChecker {
 
             }
             if (ps.equals(ERROR_1) || ps.equals(ERROR_2)) {
-                CityRegisterException ex = new CityRegisterException("Fake ERROR " + ps);
+                CityRegisterException ex = new CityRegisterException("Fake ERROR  " + ps);
                 throw ex;
             }
         }
